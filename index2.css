@@ -43,7 +43,7 @@ body {
 }
 .demo a{
   font-family: 'Raleway', sans-serif;
-color: #000;		
+  color: #000;		
 }
 
 
@@ -54,6 +54,82 @@ header {
     flex-direction: column;
     margin: 5rem;
 }
+
+.cronometro-e-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px #00000066;
+  max-width: 360px;
+  margin: auto;
+  gap: 20px;
+}
+
+.cronometro-box {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.player-box {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 16px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px #1db95499;
+}
+
+.player-box .info {
+  text-align: center;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.player-box .info strong {
+  font-size: 16px;
+  color: white;
+}
+
+#playPauseBtn {
+  background-color: #1db954;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 28px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px #1db95488;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#playPauseBtn:hover {
+  transform: scale(1.1);
+}
+
+#progress {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  background: #404040;
+  accent-color: #1db954;
+  cursor: pointer;
+}
+
+
 
 
 
@@ -108,12 +184,10 @@ h1 {
     width: 20rem;
     border-radius: 15px;
     overflow: hidden;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 2rem auto;
     box-shadow: 7px 7px 7px 0px black;
 }
+
 
 .content .slide img {
     height: 100%;
@@ -210,6 +284,8 @@ img {
     background-color:rgb(255, 0, 255);
     color: whitesmoke;
   }
+
+
 
 
   @media (max-width: 768px) {

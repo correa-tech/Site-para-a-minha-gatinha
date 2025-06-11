@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+     height: 100vh;
+      margin: 0;
+}
+
+
+h1 {
+    font-size: 70px;
+}
+
+a {
+    font-size: 50px;
+    color: black;
+    background-color: aquamarine;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+a:hover {
+    background-color: rgb(21, 109, 109);
+    padding: 10px;
+}
